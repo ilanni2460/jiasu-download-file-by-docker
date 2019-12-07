@@ -15,4 +15,4 @@ RUN wget ${NEXUS_DOWNLOAD_URL_2}
 #下载jfrog
 ENV JFROG_VERSION=6.16.0
 ENV JFROG_DOWNLOAD_URL=https://bintray.com/jfrog/artifactory/download_file?file_path=jfrog-artifactory-oss-${JFROG_VERSION}.zip
-RUN wget ${JFROG_DOWNLOAD_URL}
+RUN wget ${JFROG_DOWNLOAD_URL} -O jfrog-artifactory.zip
