@@ -24,3 +24,8 @@ RUN wget ${KAFAKA_DOWNLOAD_URL}
 
 #下载flink
 RUN wget https://www.apache.org/dyn/closer.lua/flink/flink-1.7.2/flink-1.7.2-bin-scala_2.11.tgz
+
+#下载es
+ENV ES_VERSION=6.5.2
+ENV ES_DOWNLOAD_URL=https://artifacts.elastic.co/downloads/elasticsearch/elasticsearch-${ES_VERSION}.tar.gz
+RUN wget ${ES_DOWNLOAD_URL}
