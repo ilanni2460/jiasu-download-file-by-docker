@@ -1,4 +1,5 @@
 FROM alpine:latest
+MAINTAINER 烂泥行天下 <ilanni@ilanni.com>
 
 RUN apk --no-cache add wget curl
 
