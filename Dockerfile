@@ -30,3 +30,8 @@ RUN wget https://www.apache.org/dyn/closer.lua/flink/flink-1.7.2/flink-1.7.2-bin
 ENV ES_VERSION=6.5.2
 ENV ES_DOWNLOAD_URL=https://artifacts.elastic.co/downloads/elasticsearch/elasticsearch-${ES_VERSION}.tar.gz
 RUN wget ${ES_DOWNLOAD_URL}
+
+#下载harbor
+ENV HARBOR_VERSION=1.10.1
+ENV HARBOR_DOWNLOAD_URL=https://github.com/goharbor/harbor/releases/download/v${HARBOR_VERSION}/harbor-offline-installer-v${HARBOR_VERSION}.tgz
+RUN wget ${HARBOR_DOWNLOAD_URL}
