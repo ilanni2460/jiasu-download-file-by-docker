@@ -35,3 +35,8 @@ RUN wget ${ES_DOWNLOAD_URL}
 ENV HARBOR_VERSION=1.10.1
 ENV HARBOR_DOWNLOAD_URL=https://github.com/goharbor/harbor/releases/download/v${HARBOR_VERSION}/harbor-offline-installer-v${HARBOR_VERSION}.tgz
 RUN wget ${HARBOR_DOWNLOAD_URL}
+
+#下载helm
+ENV HELM_VERSION=3.1.1
+ENV HELM_DOWNLOAD_URL=https://get.helm.sh/helm-v${HELM_VERSION}-linux-amd64.tar.gz
+RUN wget ${HELM_DOWNLOAD_URL}
