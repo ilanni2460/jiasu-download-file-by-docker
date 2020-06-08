@@ -14,7 +14,7 @@ ENV NEXUS_DOWNLOAD_URL_2=https://download.sonatype.com/nexus/oss/nexus-${NEXUS_V
 RUN wget ${NEXUS_DOWNLOAD_URL_2}
 
 #下载jfrog
-ENV JFROG_VERSION=6.19.2
+ENV JFROG_VERSION=6.20.0
 ENV JFROG_DOWNLOAD_URL=https://bintray.com/jfrog/artifactory/download_file?file_path=jfrog-artifactory-oss-${JFROG_VERSION}.zip
 RUN wget ${JFROG_DOWNLOAD_URL} -O jfrog-artifactory-${JFROG_VERSION}.zip
 
