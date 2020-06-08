@@ -14,7 +14,7 @@ ENV NEXUS_DOWNLOAD_URL_2=https://download.sonatype.com/nexus/oss/nexus-${NEXUS_V
 RUN wget ${NEXUS_DOWNLOAD_URL_2}
 
 #下载jfrog
-ENV JFROG_VERSION=6.16.0
+ENV JFROG_VERSION=6.19.2
 ENV JFROG_DOWNLOAD_URL=https://bintray.com/jfrog/artifactory/download_file?file_path=jfrog-artifactory-oss-${JFROG_VERSION}.zip
 RUN wget ${JFROG_DOWNLOAD_URL} -O jfrog-artifactory-${JFROG_VERSION}.zip
 
@@ -32,7 +32,7 @@ ENV ES_DOWNLOAD_URL=https://artifacts.elastic.co/downloads/elasticsearch/elastic
 RUN wget ${ES_DOWNLOAD_URL}
 
 #下载harbor
-ENV HARBOR_VERSION=1.10.1
+ENV HARBOR_VERSION=2.0.0
 ENV HARBOR_DOWNLOAD_URL=https://github.com/goharbor/harbor/releases/download/v${HARBOR_VERSION}/harbor-offline-installer-v${HARBOR_VERSION}.tgz
 RUN wget ${HARBOR_DOWNLOAD_URL}
 
